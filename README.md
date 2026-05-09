@@ -5,7 +5,7 @@
 ![Nightfall Arena Preview](https://github.com/mutlukurt/nightfall-arena/raw/main/public/images/preview.png)
 
 ## 🚀 Live Demo
-[View Live Site](https://nightfall-arena.vercel.app) *(Placeholder)*
+[View Live Site](https://nightfall-arena.vercel.app/)
 
 ## ✨ Key Features
 
