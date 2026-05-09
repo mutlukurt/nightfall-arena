@@ -48,7 +48,7 @@ export const Footer = () => {
           {/* Copyright */}
           <div className="text-center">
             <p className="text-gray-600 text-xs uppercase tracking-[0.2em]">
-              © 2026 NIGHTFALL GAMES INC. ALL RIGHTS RESERVED.
+              © 2026 NIGHTFALL ARENA. DEVELOPED BY MUTLU KURT. MIT LICENSED.
             </p>
             <div className="mt-2 flex justify-center space-x-4">
               <Link href="#" className="text-gray-500 hover:text-white text-[10px] transition-colors">PRIVACY POLICY</Link>
