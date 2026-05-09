@@ -29,23 +29,23 @@ export const HeroSection = () => {
         <div className="max-w-2xl">
           <div className="flex items-center space-x-2 mb-4 animate-slide-up">
             <div className="h-[1px] w-8 bg-bronze" />
-            <span className="text-bronze font-oswald tracking-[0.3em] text-xs uppercase">
+            <span className="text-bronze font-oswald tracking-[0.2em] sm:tracking-[0.3em] text-[10px] sm:text-xs uppercase">
               New Hero Released
             </span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-oswald font-bold text-white uppercase leading-none mb-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-oswald font-bold text-white uppercase leading-none mb-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             KAIRA, THE <br />
             <span className="text-transparent border-text stroke-white">SHADOW HUNTER</span>
           </h1>
           
-          <p className="text-gray-400 text-lg mb-8 max-w-lg font-inter">
+          <p className="text-gray-400 text-base sm:text-lg mb-8 max-w-lg font-inter">
             Master the shadows and strike from the unseen. Kaira returns to the Eclipse Fold with devastating new abilities.
           </p>
 
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button variant="primary">MEET KAIRA</Button>
-            <Button variant="outline" onClick={() => setIsVideoModalOpen(true)}>WATCH TRAILER</Button>
+            <Button variant="primary" className="w-full sm:w-auto">MEET KAIRA</Button>
+            <Button variant="outline" className="w-full sm:w-auto" onClick={() => setIsVideoModalOpen(true)}>WATCH TRAILER</Button>
           </div>
         </div>
       </div>

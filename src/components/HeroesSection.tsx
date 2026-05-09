@@ -77,8 +77,8 @@ export const HeroesSection = () => {
               onClick={() => setActiveIndex(index)}
               className={`relative flex-shrink-0 transition-all duration-500 cursor-pointer snap-center
                 ${index === activeIndex 
-                  ? "w-[280px] md:w-[320px] h-[450px] md:h-[500px] z-20 border-2 border-bronze" 
-                  : "w-[220px] md:w-[240px] h-[380px] md:h-[420px] opacity-40 scale-95 grayscale hover:grayscale-0 hover:opacity-100"
+                  ? "w-[240px] sm:w-[280px] md:w-[320px] h-[400px] sm:h-[450px] md:h-[500px] z-20 border-2 border-bronze" 
+                  : "w-[180px] sm:w-[220px] md:w-[240px] h-[320px] sm:h-[380px] md:h-[420px] opacity-40 scale-95 grayscale hover:grayscale-0 hover:opacity-100"
                 }
               `}
             >

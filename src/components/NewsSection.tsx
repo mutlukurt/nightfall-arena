@@ -46,7 +46,7 @@ export const NewsSection = () => {
           <Button variant="outline" className="hidden md:block">VIEW ALL</Button>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Featured Card */}
           <div className="lg:col-span-2 group cursor-pointer">
             <div className="relative h-[400px] overflow-hidden border border-white/10 group-hover:border-bronze/50 transition-colors">

@@ -20,7 +20,7 @@ export const BattlefieldSection = () => {
 
       {/* Content */}
       <div className="container mx-auto px-6 relative z-10 text-center">
-        <h2 className="text-5xl md:text-7xl font-oswald font-bold text-white uppercase tracking-tighter mb-4">
+        <h2 className="text-3xl sm:text-5xl md:text-7xl font-oswald font-bold text-white uppercase tracking-tighter mb-4">
           BATTLE IN THE <span className="text-bronze">ECLIPSE FOLD</span>
         </h2>
         <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8 font-inter">
