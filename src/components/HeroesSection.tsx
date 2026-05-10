@@ -42,6 +42,13 @@ const heroes = [
     description: "Technologically advanced sniper with her mechanical spider rig.",
     abilities: [],
   },
+  {
+    name: "DRAKON",
+    role: "MAGE",
+    image: "/images/hero-drakon.png",
+    description: "A master of molten fury, Drakon turns the battlefield into an inferno.",
+    abilities: [],
+  },
 ];
 
 export const HeroesSection = () => {

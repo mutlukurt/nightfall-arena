@@ -48,6 +48,46 @@ const allHeroes = [
     description: "Technologically advanced sniper with her mechanical spider rig.",
     stats: { attack: 9, defense: 4, magic: 5, difficulty: 7 }
   },
+  {
+    name: "DRAKON",
+    role: "MAGE",
+    image: "/images/hero-drakon.png",
+    difficulty: "MEDIUM",
+    description: "A master of molten fury, Drakon turns the battlefield into an inferno.",
+    stats: { attack: 4, defense: 5, magic: 10, difficulty: 6 }
+  },
+  {
+    name: "LIRA",
+    role: "SUPPORT",
+    image: "/images/hero-lira.png",
+    difficulty: "EASY",
+    description: "Celestial guardian who protects her allies with blinding holy light.",
+    stats: { attack: 2, defense: 7, magic: 9, difficulty: 3 }
+  },
+  {
+    name: "MALPHAS",
+    role: "WARRIOR",
+    image: "/images/hero-malphas.png",
+    difficulty: "HARD",
+    description: "An unstoppable demonic juggernaut who thrives in the heart of battle.",
+    stats: { attack: 6, defense: 10, magic: 4, difficulty: 8 }
+  },
+  {
+    name: "SYLAS",
+    role: "ASSASSIN",
+    image: "/images/hero-sylas.png",
+    difficulty: "HARD",
+    description: "The void's whisper, Sylas strikes from the silence between heartbeats.",
+    stats: { attack: 10, defense: 3, magic: 6, difficulty: 9 }
+  },
+  {
+    name: "CALYPSA",
+    role: "SNIPER",
+    image: "/images/hero-calypsa.png",
+    difficulty: "MEDIUM",
+    description: "Regal siren of the depths, her water-arrows never miss their mark.",
+    stats: { attack: 9, defense: 4, magic: 7, difficulty: 7 }
+  },
 ];
 
 export default function HeroesPage() {
@@ -57,7 +97,7 @@ export default function HeroesPage() {
     ? allHeroes 
     : allHeroes.filter(h => h.role === filter);
 
-  const roles = ["ALL", "HUNTER", "MAGE", "WARRIOR", "ASSASSIN", "SNIPER"];
+  const roles = ["ALL", "HUNTER", "MAGE", "WARRIOR", "ASSASSIN", "SNIPER", "SUPPORT"];
 
   return (
     <main className="min-h-screen bg-charcoal">

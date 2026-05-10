@@ -70,6 +70,55 @@ export default function GamePage() {
         </div>
       </section>
 
+      {/* Arenas Section */}
+      <section className="py-24 bg-charcoal">
+        <div className="container mx-auto px-6">
+          <SectionTitle 
+            title="THE BATTLEGROUNDS" 
+            subtitle="Explore the diverse environments of the Eclipse Fold, each with its own tactical challenges."
+            centered
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            {[
+              { 
+                name: "THE IRON GATES", 
+                image: "/images/arena-iron-gates.png", 
+                desc: "An industrial fortress where molten metal and crushing gears create a lethal environment." 
+              },
+              { 
+                name: "TEMPLE OF ASH", 
+                image: "/images/arena-temple-ash.png", 
+                desc: "Ancient ruins beneath a dormant volcano, where the ground itself bleeds fire." 
+              },
+              { 
+                name: "SUNKEN REACH", 
+                image: "/images/arena-sunken-reach.png", 
+                desc: "A majestic underwater cathedral city reclaimed by the void and the deep sea." 
+              }
+            ].map((arena) => (
+              <div key={arena.name} className="group relative overflow-hidden border border-white/5 transition-all hover:border-bronze/50">
+                <div className="relative h-[400px]">
+                  <Image
+                    src={arena.image}
+                    alt={arena.name}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-80" />
+                </div>
+                <div className="absolute bottom-0 left-0 p-8">
+                  <h3 className="text-2xl font-oswald font-bold text-white mb-2 group-hover:text-bronze transition-colors">{arena.name}</h3>
+                  <p className="text-sm text-gray-400 font-inter line-clamp-2">
+                    {arena.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 text-center">
         <div className="container mx-auto px-6">
