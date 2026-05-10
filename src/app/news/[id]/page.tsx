@@ -61,9 +61,32 @@ const allNews = [
         <li><strong>Visual Effects:</strong> All of Nyx's abilities now feature glowing ember particles and smoke trails.</li>
         <li><strong>Unique Voiceover:</strong> Over 100 new lines of dialogue reflecting Nyx's new fiery persona.</li>
         <li><strong>Legendary Recall:</strong> Nyx vanishes into a pillar of flame, leaving nothing but ash behind.</li>
+        <li><strong>Legendary Recall:</strong> Nyx vanishes into a pillar of flame, leaving nothing but ash behind.</li>
       </ul>
 
       <p>The Ember Rogue skin is now available in the in-game shop for 1825 Solar Shards. Purchase it within the first 48 hours to unlock the exclusive "Ashen Blade" summoner icon!</p>
+    `
+  },
+  {
+    id: "4",
+    title: "PATCH 1.4 NOTES: BALANCE CHANGES",
+    category: "UPDATES",
+    date: "MAY 01, 2026",
+    image: "/images/news-patch-notes.png",
+    content: `
+      <p>The latest balance update is here! Patch 1.4 focuses on fine-tuning hero interactions and enhancing the strategic depth of the Eclipse Fold.</p>
+      
+      <h3>HERO ADJUSTMENTS</h3>
+      <ul>
+        <li><strong>DRAKON:</strong> Increased base mana regeneration to allow for more aggressive laning.</li>
+        <li><strong>KAIRA:</strong> Reduced the cooldown of Shadow Strike to reward precise timing.</li>
+        <li><strong>RONIN:</strong> Slightly decreased health growth per level to balance his late-game tankiness.</li>
+      </ul>
+
+      <h3>TACTICAL UPDATES</h3>
+      <p>The Solar Obelisks now provide a stacking defensive buff to nearby allies, making them more valuable objectives during mid-game skirmishes.</p>
+      
+      <p>Read the full technical breakdown in our official community forums and join the discussion on Discord!</p>
     `
   }
 ];

@@ -34,7 +34,7 @@ const allNews = [
     title: "PATCH 1.4 NOTES: BALANCE CHANGES",
     category: "UPDATES",
     date: "MAY 01, 2026",
-    image: "/images/preview.png",
+    image: "/images/news-patch-notes.png",
   },
   {
     id: "5",
