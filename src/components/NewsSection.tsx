@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { SectionTitle } from "./SectionTitle";
 import { Button } from "./Button";
 
@@ -43,7 +44,9 @@ export const NewsSection = () => {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-end mb-12">
           <SectionTitle title="NIGHTFALL NEWS" />
-          <Button variant="outline" className="hidden md:block">VIEW ALL</Button>
+          <Link href="/news">
+            <Button variant="outline" className="hidden md:block">VIEW ALL</Button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -41,7 +41,7 @@ export const Navbar = () => {
             {navLinks.map((item) => (
               <Link
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`/${item.toLowerCase()}`}
                 className="text-sm font-oswald tracking-widest text-gray-300 hover:text-white transition-colors relative group"
               >
                 {item}
@@ -117,7 +117,7 @@ export const Navbar = () => {
             {navLinks.map((item) => (
               <Link
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`/${item.toLowerCase()}`}
                 className="text-4xl font-oswald font-bold tracking-widest text-white hover:text-bronze transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

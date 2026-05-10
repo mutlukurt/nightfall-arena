@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { SectionTitle } from "./SectionTitle";
 import { Button } from "./Button";
 
@@ -66,7 +67,9 @@ export const HeroesSection = () => {
             subtitle="Every hero brings unique strengths, weaknesses, and stories into battle."
             centered
           />
-          <Button variant="outline" className="mt-8">VIEW ALL</Button>
+          <Link href="/heroes">
+            <Button variant="outline" className="mt-8">VIEW ALL</Button>
+          </Link>
         </div>
 
         {/* Hero Cards Carousel */}

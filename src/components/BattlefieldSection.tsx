@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "./Button";
 
 export const BattlefieldSection = () => {
@@ -26,7 +27,9 @@ export const BattlefieldSection = () => {
         <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8 font-inter">
           A dynamic battlefield where every stone and tree tells a story. Strategy is your greatest weapon in the Three Lanes of Ash.
         </p>
-        <Button variant="primary">LEARN MORE</Button>
+        <Link href="/game">
+          <Button variant="primary">LEARN MORE</Button>
+        </Link>
       </div>
 
       {/* Grid overlay for tactical feel */}

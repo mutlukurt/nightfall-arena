@@ -15,7 +15,9 @@ export const Footer = () => {
             <p className="text-gray-500 text-sm mb-6 leading-relaxed">
               New to the arena? Learn the basics of combat, lanes, and items in our comprehensive beginner's academy.
             </p>
-            <Button variant="outline" className="w-full md:w-auto">VISIT THE ACADEMY</Button>
+            <Link href="/game" className="w-full md:w-auto">
+              <Button variant="outline" className="w-full md:w-auto">VISIT THE ACADEMY</Button>
+            </Link>
           </div>
 
           <div className="text-center md:text-left">
@@ -23,7 +25,9 @@ export const Footer = () => {
             <p className="text-gray-500 text-sm mb-6 leading-relaxed">
               Have questions about gameplay mechanics, account security, or technical requirements?
             </p>
-            <Button variant="outline" className="w-full md:w-auto">VIEW OUR FAQ</Button>
+            <Link href="/support" className="w-full md:w-auto">
+              <Button variant="outline" className="w-full md:w-auto">VIEW OUR FAQ</Button>
+            </Link>
           </div>
 
           <div className="text-center md:text-left">
@@ -31,7 +35,9 @@ export const Footer = () => {
             <p className="text-gray-500 text-sm mb-6 leading-relaxed">
               Our support team is available 24/7 to assist with any issues you might encounter in the Fold.
             </p>
-            <Button variant="outline" className="w-full md:w-auto">OPEN A TICKET</Button>
+            <Link href="/support" className="w-full md:w-auto">
+              <Button variant="outline" className="w-full md:w-auto">OPEN A TICKET</Button>
+            </Link>
           </div>
         </div>
 
