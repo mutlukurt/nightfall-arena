@@ -52,9 +52,11 @@ export const Navbar = () => {
 
           {/* Right CTA */}
           <div className="flex items-center space-x-4">
-            <Button variant="primary" className="hidden sm:block">
-              DOWNLOAD FOR FREE
-            </Button>
+            <Link href="/download" className="hidden sm:block">
+              <Button variant="primary">
+                DOWNLOAD FOR FREE
+              </Button>
+            </Link>
             <button 
               className="lg:hidden text-white p-2 hover:text-bronze transition-colors"
               onClick={() => setIsMobileMenuOpen(true)}
@@ -127,9 +129,11 @@ export const Navbar = () => {
           </div>
 
           <div className="mt-auto pb-10">
-            <Button variant="primary" className="w-full py-4 text-lg">
-              DOWNLOAD FOR FREE
-            </Button>
+            <Link href="/download" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button variant="primary" className="w-full py-4 text-lg">
+                DOWNLOAD FOR FREE
+              </Button>
+            </Link>
             <p className="text-gray-500 text-center mt-6 text-xs uppercase tracking-widest">
               Join the battle in the Eclipse Fold
             </p>
