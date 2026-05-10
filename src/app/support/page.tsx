@@ -25,7 +25,7 @@ export default function SupportPage() {
           />
 
           {/* FAQ Section */}
-          <div className="max-w-3xl mx-auto mt-20 space-y-6">
+          <div id="faq" className="max-w-3xl mx-auto mt-20 space-y-6">
             <h2 className="text-2xl font-oswald font-bold text-white mb-8 border-b border-bronze pb-4 inline-block">FREQUENTLY ASKED QUESTIONS</h2>
             {faqs.map((faq, i) => (
               <div key={i} className="bg-charcoal-light border border-white/5 p-6 hover:border-white/20 transition-colors">
@@ -38,7 +38,7 @@ export default function SupportPage() {
           </div>
 
           {/* Contact Section */}
-          <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div id="ticket" className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div className="bg-charcoal-light p-10 border border-white/5 text-center group hover:border-bronze/30 transition-colors">
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center text-bronze">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">

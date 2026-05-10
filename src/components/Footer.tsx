@@ -25,7 +25,7 @@ export const Footer = () => {
             <p className="text-gray-500 text-sm mb-6 leading-relaxed">
               Have questions about gameplay mechanics, account security, or technical requirements?
             </p>
-            <Link href="/support" className="w-full md:w-auto">
+            <Link href="/support#faq" className="w-full md:w-auto">
               <Button variant="outline" className="w-full md:w-auto">VIEW OUR FAQ</Button>
             </Link>
           </div>
@@ -35,7 +35,7 @@ export const Footer = () => {
             <p className="text-gray-500 text-sm mb-6 leading-relaxed">
               Our support team is available 24/7 to assist with any issues you might encounter in the Fold.
             </p>
-            <Link href="/support" className="w-full md:w-auto">
+            <Link href="/support#ticket" className="w-full md:w-auto">
               <Button variant="outline" className="w-full md:w-auto">OPEN A TICKET</Button>
             </Link>
           </div>
