@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SectionTitle } from "@/components/SectionTitle";
@@ -49,7 +50,9 @@ export default function SupportPage() {
               <p className="text-gray-400 font-inter mb-8">
                 For account issues, billing, or technical problems that require human assistance.
               </p>
-              <Button variant="primary" className="w-full">OPEN TICKET</Button>
+              <Link href="/support/ticket">
+                <Button variant="primary" className="w-full">OPEN TICKET</Button>
+              </Link>
             </div>
             
             <div className="bg-charcoal-light p-10 border border-white/5 text-center group hover:border-bronze/30 transition-colors">
@@ -62,7 +65,9 @@ export default function SupportPage() {
               <p className="text-gray-400 font-inter mb-8">
                 Check the current status of game servers and scheduled maintenance.
               </p>
-              <Button variant="outline" className="w-full">CHECK STATUS</Button>
+              <Link href="/support/status">
+                <Button variant="outline" className="w-full">CHECK STATUS</Button>
+              </Link>
             </div>
           </div>
 
