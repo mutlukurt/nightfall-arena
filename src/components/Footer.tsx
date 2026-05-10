@@ -57,9 +57,9 @@ export const Footer = () => {
               © 2026 NIGHTFALL ARENA. DEVELOPED BY MUTLU KURT. MIT LICENSED.
             </p>
             <div className="mt-2 flex justify-center space-x-4">
-              <Link href="#" className="text-gray-500 hover:text-white text-[10px] transition-colors">PRIVACY POLICY</Link>
+              <Link href="/privacy" className="text-gray-500 hover:text-white text-[10px] transition-colors">PRIVACY POLICY</Link>
               <span className="text-gray-800">|</span>
-              <Link href="#" className="text-gray-500 hover:text-white text-[10px] transition-colors">TERMS OF USE</Link>
+              <Link href="/terms" className="text-gray-500 hover:text-white text-[10px] transition-colors">TERMS OF USE</Link>
             </div>
           </div>
 
