@@ -104,7 +104,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ id
                 src={article.image}
                 alt={article.title}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </header>

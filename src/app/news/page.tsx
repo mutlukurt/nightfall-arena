@@ -70,7 +70,7 @@ export default function NewsPage() {
                 src={allNews[0].image}
                 alt={allNews[0].title}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-1000"
+                className="object-cover object-top group-hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-12 max-w-4xl">
@@ -97,7 +97,7 @@ export default function NewsPage() {
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="object-cover object-top group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors" />
                 </div>
