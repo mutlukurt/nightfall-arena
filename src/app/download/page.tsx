@@ -4,13 +4,24 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Button } from "@/components/Button";
+import { 
+  SiApple, 
+  SiEpicgames, 
+  SiSteam 
+} from "@icons-pack/react-simple-icons";
+
+const WindowsIcon = ({ className }: { className?: string }) => (
+  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className={className} fill="currentColor">
+    <path d="M0 0v11.408h11.408V0H0zm12.592 0v11.408H24V0H12.592zM0 12.592V24h11.408V12.592H0zm12.592 0V24H24V12.592H12.592z"/>
+  </svg>
+);
 
 export default function DownloadPage() {
   const platforms = [
-    { name: "WINDOWS", icon: "🪟", status: "Available", size: "24.5 GB" },
-    { name: "MAC OS", icon: "🍎", status: "Coming Soon", size: "-" },
-    { name: "EPIC GAMES", icon: "🎮", status: "Available", size: "24.5 GB" },
-    { name: "STEAM", icon: "☁️", status: "Available", size: "24.5 GB" },
+    { name: "WINDOWS", icon: <WindowsIcon className="w-8 h-8" />, status: "Available", size: "24.5 GB" },
+    { name: "MAC OS", icon: <SiApple className="w-8 h-8" />, status: "Coming Soon", size: "-" },
+    { name: "EPIC GAMES", icon: <SiEpicgames className="w-8 h-8" />, status: "Available", size: "24.5 GB" },
+    { name: "STEAM", icon: <SiSteam className="w-8 h-8" />, status: "Available", size: "24.5 GB" },
   ];
 
   return (
@@ -52,7 +63,7 @@ export default function DownloadPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
             {platforms.map((p) => (
               <div key={p.name} className={`bg-charcoal-light p-10 border transition-all group ${p.status === 'Available' ? 'border-white/5 hover:border-bronze/50' : 'border-white/5 opacity-50 grayscale'}`}>
-                <div className="text-4xl mb-6">{p.icon}</div>
+                <div className="text-bronze mb-6 group-hover:scale-110 transition-transform origin-left">{p.icon}</div>
                 <h3 className="text-2xl font-oswald font-bold text-white mb-2 tracking-widest">{p.name}</h3>
                 <div className="flex justify-between items-center mt-6 pt-6 border-t border-white/5">
                   <span className="text-[10px] font-oswald text-gray-500 uppercase tracking-widest">{p.status}</span>
