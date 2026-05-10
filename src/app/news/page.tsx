@@ -4,10 +4,10 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Button } from "@/components/Button";
-
+import Link from "next/link";
 const allNews = [
   {
-    id: 1,
+    id: "1",
     title: "FREE HERO ROTATION: TRY DRAKON NOW",
     category: "ROTATION",
     date: "MAY 10, 2026",
@@ -16,35 +16,35 @@ const allNews = [
     featured: true,
   },
   {
-    id: 2,
+    id: "2",
     title: "WATCH NOW: ARENA CUP FINALS",
     category: "ESPORTS",
     date: "MAY 08, 2026",
     image: "/images/news-cup.png",
   },
   {
-    id: 3,
+    id: "3",
     title: "EMBER ROGUE SKIN REVEALED",
     category: "SKINS",
     date: "MAY 05, 2026",
     image: "/images/news-skin.png",
   },
   {
-    id: 4,
+    id: "4",
     title: "PATCH 1.4 NOTES: BALANCE CHANGES",
     category: "UPDATES",
     date: "MAY 01, 2026",
     image: "/images/preview.png",
   },
   {
-    id: 5,
+    id: "5",
     title: "THE LORE OF THE TEMPLE OF ASH",
     category: "LORE",
     date: "APR 28, 2026",
     image: "/images/game-lore.png",
   },
   {
-    id: 6,
+    id: "6",
     title: "COMMUNITY SPOTLIGHT: FAN ART #24",
     category: "COMMUNITY",
     date: "APR 25, 2026",
@@ -64,8 +64,7 @@ export default function NewsPage() {
             subtitle="Stay updated with the latest news, patch notes, and esports events."
           />
 
-          {/* Featured News */}
-          <div className="mt-12 mb-20 group cursor-pointer">
+          <Link href={`/news/${allNews[0].id}`} className="mt-12 mb-20 group cursor-pointer block">
             <div className="relative h-[500px] overflow-hidden border border-white/10 group-hover:border-bronze/50 transition-colors">
               <Image
                 src={allNews[0].image}
@@ -87,12 +86,12 @@ export default function NewsPage() {
                 <Button variant="primary">READ ARTICLE</Button>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* News Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {allNews.slice(1).map((item) => (
-              <div key={item.id} className="group cursor-pointer">
+              <Link key={item.id} href={`/news/${item.id}`} className="group cursor-pointer block">
                 <div className="relative h-[250px] overflow-hidden border border-white/10 group-hover:border-bronze/50 transition-colors mb-6">
                   <Image
                     src={item.image}
@@ -109,7 +108,7 @@ export default function NewsPage() {
                 <h3 className="text-2xl font-oswald font-bold text-white group-hover:text-bronze transition-colors leading-tight">
                   {item.title}
                 </h3>
-              </div>
+              </Link>
             ))}
           </div>
 

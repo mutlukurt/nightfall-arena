@@ -6,7 +6,7 @@ import { Button } from "./Button";
 
 const newsItems = [
   {
-    id: 1,
+    id: "1",
     title: "FREE HERO ROTATION: TRY DRAKON NOW",
     category: "ROTATION",
     date: "MAY 10, 2026",
@@ -15,14 +15,14 @@ const newsItems = [
     featured: true,
   },
   {
-    id: 2,
+    id: "2",
     title: "WATCH NOW: ARENA CUP FINALS",
     category: "ESPORTS",
     date: "MAY 08, 2026",
     image: "/images/news-cup.png",
   },
   {
-    id: 3,
+    id: "3",
     title: "EMBER ROGUE SKIN REVEALED",
     category: "SKINS",
     date: "MAY 05, 2026",
@@ -50,8 +50,7 @@ export const NewsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Featured Card */}
-          <div className="lg:col-span-2 group cursor-pointer">
+          <Link href={`/news/${newsItems[0].id}`} className="lg:col-span-2 group cursor-pointer block">
             <div className="relative h-[400px] overflow-hidden border border-white/10 group-hover:border-bronze/50 transition-colors">
               <Image
                 src={newsItems[0].image}
@@ -75,12 +74,12 @@ export const NewsSection = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Middle Column */}
           <div className="flex flex-col gap-8">
             {newsItems.slice(1).map((item) => (
-              <div key={item.id} className="group cursor-pointer">
+              <Link key={item.id} href={`/news/${item.id}`} className="group cursor-pointer block">
                 <div className="relative h-[184px] overflow-hidden border border-white/10 group-hover:border-bronze/50 transition-colors mb-4">
                   <Image
                     src={item.image}
@@ -96,7 +95,7 @@ export const NewsSection = () => {
                 <h4 className="text-lg font-oswald font-bold text-white group-hover:text-bronze transition-colors">
                   {item.title}
                 </h4>
-              </div>
+              </Link>
             ))}
           </div>
 
