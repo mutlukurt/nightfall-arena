@@ -1,16 +1,39 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Button } from "@/components/Button";
+import { SiDiscord, SiX, SiYoutube, SiReddit } from "@icons-pack/react-simple-icons";
 
 export default function CommunityPage() {
   const socialLinks = [
-    { name: "DISCORD", icon: "💬", desc: "Join 100k+ players to find matches and discuss strategy.", color: "#5865F2" },
-    { name: "TWITTER / X", icon: "🐦", desc: "Get the latest updates and announcements directly.", color: "#000000" },
-    { name: "YOUTUBE", icon: "📺", desc: "Watch hero guides, patch reveals, and esports highlights.", color: "#FF0000" },
-    { name: "REDDIT", icon: "👾", desc: "Share your plays and discuss balance with the dev team.", color: "#FF4500" },
+    { 
+      name: "DISCORD", 
+      icon: <SiDiscord size={40} color="#5865F2" />, 
+      desc: "Join 100k+ players to find matches and discuss strategy.", 
+      color: "#5865F2" 
+    },
+    { 
+      name: "TWITTER / X", 
+      icon: <SiX size={40} color="#FFFFFF" />, 
+      desc: "Get the latest updates and announcements directly.", 
+      color: "#000000" 
+    },
+    { 
+      name: "YOUTUBE", 
+      icon: <SiYoutube size={40} color="#FF0000" />, 
+      desc: "Watch hero guides, patch reveals, and esports highlights.", 
+      color: "#FF0000" 
+    },
+    { 
+      name: "REDDIT", 
+      icon: <SiReddit size={40} color="#FF4500" />, 
+      desc: "Share your plays and discuss balance with the dev team.", 
+      color: "#FF4500" 
+    },
   ];
 
   return (
@@ -41,7 +64,9 @@ export default function CommunityPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {socialLinks.map((link) => (
               <div key={link.name} className="bg-charcoal-light p-8 border border-white/5 hover:border-bronze/50 transition-all group">
-                <div className="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block">{link.icon}</div>
+                <div className="mb-6 group-hover:scale-110 transition-transform inline-block">
+                  {link.icon}
+                </div>
                 <h3 className="text-2xl font-oswald font-bold text-white mb-4">{link.name}</h3>
                 <p className="text-gray-400 font-inter text-sm mb-8 leading-relaxed">
                   {link.desc}

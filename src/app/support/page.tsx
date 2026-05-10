@@ -39,17 +39,26 @@ export default function SupportPage() {
 
           {/* Contact Section */}
           <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <div className="bg-charcoal-light p-10 border border-white/5 text-center">
-              <div className="text-4xl mb-6">📩</div>
-              <h3 className="text-2xl font-oswald font-bold text-white mb-4">SUBMIT A TICKET</h3>
+            <div className="bg-charcoal-light p-10 border border-white/5 text-center group hover:border-bronze/30 transition-colors">
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center text-bronze">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-oswald font-bold text-white mb-4 uppercase tracking-wider">SUBMIT A TICKET</h3>
               <p className="text-gray-400 font-inter mb-8">
                 For account issues, billing, or technical problems that require human assistance.
               </p>
               <Button variant="primary" className="w-full">OPEN TICKET</Button>
             </div>
-            <div className="bg-charcoal-light p-10 border border-white/5 text-center">
-              <div className="text-4xl mb-6">🛠️</div>
-              <h3 className="text-2xl font-oswald font-bold text-white mb-4">SERVER STATUS</h3>
+            
+            <div className="bg-charcoal-light p-10 border border-white/5 text-center group hover:border-bronze/30 transition-colors">
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center text-bronze">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-oswald font-bold text-white mb-4 uppercase tracking-wider">SERVER STATUS</h3>
               <p className="text-gray-400 font-inter mb-8">
                 Check the current status of game servers and scheduled maintenance.
               </p>
@@ -61,9 +70,9 @@ export default function SupportPage() {
             <p className="text-gray-500 font-inter mb-6 uppercase tracking-widest text-xs">Still need help?</p>
             <h2 className="text-3xl font-oswald font-bold text-white mb-8 uppercase">Reach out on social media</h2>
             <div className="flex justify-center gap-8">
-              <span className="text-gray-400 hover:text-bronze transition-colors cursor-pointer font-oswald tracking-widest">DISCORD</span>
-              <span className="text-gray-400 hover:text-bronze transition-colors cursor-pointer font-oswald tracking-widest">TWITTER</span>
-              <span className="text-gray-400 hover:text-bronze transition-colors cursor-pointer font-oswald tracking-widest">INSTAGRAM</span>
+              <span className="text-gray-400 hover:text-bronze transition-colors cursor-pointer font-oswald tracking-widest uppercase">DISCORD</span>
+              <span className="text-gray-400 hover:text-bronze transition-colors cursor-pointer font-oswald tracking-widest uppercase">TWITTER</span>
+              <span className="text-gray-400 hover:text-bronze transition-colors cursor-pointer font-oswald tracking-widest uppercase">INSTAGRAM</span>
             </div>
           </div>
         </div>
