@@ -15,7 +15,7 @@ export const Footer = () => {
             <p className="text-gray-500 text-sm mb-6 leading-relaxed">
               New to the arena? Learn the basics of combat, lanes, and items in our comprehensive beginner's academy.
             </p>
-            <Link href="/game" className="w-full md:w-auto">
+            <Link href="/academy" className="w-full md:w-auto">
               <Button variant="outline" className="w-full md:w-auto">VISIT THE ACADEMY</Button>
             </Link>
           </div>

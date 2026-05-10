@@ -16,7 +16,7 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = ["GAME", "HEROES", "NEWS", "COMMUNITY", "SUPPORT"];
+  const navLinks = ["GAME", "ACADEMY", "HEROES", "NEWS", "COMMUNITY", "SUPPORT"];
 
   return (
     <>
